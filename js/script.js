@@ -4,7 +4,12 @@ let pokemonList = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","C
 
 // Question 1
 
+let hostNameP = document.querySelector("#host-name");
+console.log("hostNameP", hostNameP);
+hostNameP.innerText = "Zihan";
 
+let collaboratorNameP = document.querySelector("#collaborator-name");
+collaboratorNameP.innerText = "Sushrita";
 
 
 // Question 2
@@ -46,8 +51,15 @@ let pokemonList = ["Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","C
 
 //Question 8
 
+let colorPickerInput = document.querySelector("#color-picker");
 
+colorPickerInput.addEventListener("change", changeBackgroundColor);
 
+function changeBackgroundColor() {
+     let colorValue = colorPickerInput.value;
+     console.log("colorValue", colorValue);
+    document.body.style.backgroundColor = colorValue;
+};
 
 
 //Question 9 
